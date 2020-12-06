@@ -1,0 +1,10 @@
+[build]
+  functions = "functions/"
+[dev]
+  command = "yarn start"
+  targetPort = 1234
+  publish = "/" 
+  jwtRolePath = "app_metadata.authorization.roles"
+  jwtSecret = "MY_JWT_SECRET_VALUE"
+  autoLaunch = true
+  framework = "#custom"
